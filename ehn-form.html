@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML5 Enhanced Form </title>
+    <style>
+        table {
+            font-family: Arial;
+            border-collapse: collapse;
+            width: 100%;
+            width: 50%; height: 200px;
+        }
+  
+
+        td, th {
+            border: 1px solid #6a2fad;
+            text-align: left;
+            padding: 8px;
+        }
+    
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Enhanced-Form Page</h1>
+        <p>Demonstrating Lists, Tables, Media, and Forms</p>
+    </header>
+    
+    <nav>
+        <a href="#lists">Lists</a>
+        <a href="#tables">Tables</a>
+        <a href="#media">Media</a>
+        <a href="#contact">Contact Form</a>
+    </nav>
+    
+    <main>
+    
+        <section id="lists">
+        <h2>List Examples</h2>
+        <p>A list of some of the Web Development languages</p>
+    
+        <h3>Unordered List</h3>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+    
+        <h3>Ordered List</h3>
+        <p>A breakdown of how to work on a project</p>
+        <ol>
+            <li>Plan project</li>
+            <li>Design layout</li>
+            <li>Write code</li>
+            <li>Test and deploy</li>
+        </ol>
+    
+        </section>
+    
+        <section id="tables">
+        <h2>Data Table</h2>
+        <p>The following table shows a list of coding courses and their durations.</p>
+    
+        <table >
+            <thead>
+            <tr>
+                <th>Course</th>
+                <th>Duration (weeks)</th>
+                <th>Level</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>HTML Basics</td>
+                <td>8</td>
+            <td>Beginner</td>
+            </tr>
+            <tr>
+                <td>CSS Fundamentals</td>
+                <td>6</td>
+                <td>Intermediate</td>
+            </tr>
+            <tr>
+                <td>JavaScript Essentials</td>
+                <td>8</td>
+                <td>Advanced</td>
+            </tr>
+            <tr>
+                <td>Python </td>
+                <td>12</td>
+                <td>Intermediate</td>
+            </tr>
+            </tbody>
+        </table>
+    
+        </section>
+    
+        <!-- Media Section -->
+        <!-- Contact Form Section -->
+        <!-- Enhanced Form Section -->
+        
+    </main>
+    <section id="media">
+      <h2>Media Section</h2>
+      <p>Here is an example of an image and a video.</p>
+      <img src="https://pixabay.com/photos/bird-hummingbird-colombia-green-5353404/" alt="hummingbird-colombia" width="200"; height="150">
+      <br>
+        <h3>Video</h3>
+      <video width="320" height="240" controls>
+        <source src="4872339-hd_1920_1080_30fps.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <br>
+
+    <h3>Audio</h3>
+      <audio controls>
+        <source src="little-charlie-synthwave-background-music-for-vlog-video-stories-385882.mp3" type="audio/mpeg">
+        Your browser does not support the audio tag.
+      </audio>
+      </section>
+
+      <h2>Contact Form</h2>
+      <form action="#" method="post">
+
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" required minlength="3" maxlength="50" autocomplete="name">
+            <br><br>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required autocomplete>
+            <br><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required pattern="[0-9]{10,15}" placeholder="e.g., 0712345648" autocomplete="tel">
+            <br><br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required max="2025-01-01">
+            <br><br>
+
+            <label for="user-id">User ID:</label>
+            <input type="text" id="user-id" name="user-id" value="1234CR " readonly>
+            </fieldset>
+
+            <fieldset>
+      <legend>Additional Message</legend>
+      <label for="message">Your Message:</label>
+      <br>
+      <textarea id="message" name="message" rows="5" required minlength="10" maxlength="500" placeholder="Type your message here..."></textarea>
+    </fieldset>
+
+    <br>
+
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+  </form>
+</body>
+
+</html>
